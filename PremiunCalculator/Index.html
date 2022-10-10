@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Systems Configuration - Coding Challenge</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <h1>Systems Configuration - Coding Challenge</h1>
+    <form id="fPremium">
+        <label for="birthdate">Date Of Birth</label>
+        <input id="birthdate" type="date" name="birthdate" onchange="CalcularEdad(this);" required />
+        <label for="state">State</label>
+        <select id="state" name="state" required>
+            <option value="">[Select One]</option>
+            <option value="NJ">NJ - New Jersey</option>
+            <option value="NY">NY - New York</option>
+        </select>
+        <label for="plan"></label>
+        <select id="plan" name="plan" required>
+            <option value="">[Select One]</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="A,C">A,C</option>
+            <option value="B,C">B,C</option>
+        </select>
+        <label for="age">Age</label>
+        <input id="age" type="number" required min="18" />
+        <button id="btnGetPremium">Get Premium</button>
+    </form>
+    <table id="premiun_table" border="1">
+        <thead>
+            <tr>
+                <th>Period</th>
+                <th>Carrier</th>
+                <th>Premiun</th>
+                <th>Anual</th>
+                <th>Monthly</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
